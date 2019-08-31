@@ -20,7 +20,7 @@ export class Exercise1 extends Component {
         <div>
         {this.state.alphabet.map((row, i, arr) => (
             <div>
-                {[...arr.slice(i, arr.length), ...arr.slice(0, i)].map((col, j) => (
+                {[...arr.slice(i+1, arr.length), ...arr.slice(0, i+1)].map((col, j) => (
                         <span>{col}</span>
                 ))}
             </div>
